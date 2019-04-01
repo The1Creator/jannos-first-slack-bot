@@ -58,16 +58,6 @@ app.post('/action-endpoint', function (req, res) {
     });
   }
 
-    request.post(options, function(err, res, body) {
-      if (err) {
-        console.log(err);
-      }
-    })
-  }
-
-  res.json(reply);
-});
-
 const listener = app.listen(process.env.PORT || '3000', function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
