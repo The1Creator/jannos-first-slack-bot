@@ -1,0 +1,23 @@
+{
+  "name": "jannos-first-slack-bot",
+  "version": "1.0.0",
+  "description": "jannos bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The1Creator/jannos-first-slack-bot.git"
+  },
+  "author": "janno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The1Creator/jannos-first-slack-bot/issues"
+  },
+  "homepage": "https://github.com/The1Creator/jannos-first-slack-bot#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
