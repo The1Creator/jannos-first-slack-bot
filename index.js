@@ -24,7 +24,7 @@ app.post('/action-endpoint', function (req, res) {
     'Authorization': `Bearer ${process.env.TOKEN}` // this token you need to set on heroku
   }
 
-  // console.log(req.body.event);
+  console.log(req.body.event);
 
   if (req.body.event.subtype != 'bot_message') { // se we won't reply to ourselves...
     const body = {
