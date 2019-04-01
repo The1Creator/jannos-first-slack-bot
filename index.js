@@ -13,6 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/action-endpoint', function (req, res) {
+  console.log('Olen siin', req.body);
   const challenge = req.body.challenge; // this challenge is needed to ensure slack that our bot works
 
   const reply = {
@@ -24,7 +25,7 @@ app.post('/action-endpoint', function (req, res) {
     'Authorization': `Bearer ${process.env.TOKEN}` // this token you need to set on heroku
   }
 
-  console.log(req.body.event);
+
 
   if (req.body.event.subtype != 'bot_message') { // se we won't reply to ourselves...
     const body = {
