@@ -13,9 +13,9 @@ app.get('/', function (req, res) {
 });
 
 app.post('/action-endpoint', function (req, res) {
-  const challange = req.body.challange;
+  const challenge = req.body.challenge;
   const reply = {
-      "challange": challange
+      "challenge": challenge
   };
   res.json(reply);
 });
